@@ -1,0 +1,30 @@
+[project]
+name = "moba"
+version = "0.1.0"
+description = "MoBA implemention on mindformers"
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mindformers (==1.3.2)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "numpy (<2.0.0)",
+    "mindspore (==2.4.10)",
+    "pytest (>=8.3.5,<9.0.0)",
+    "einops (>=0.8.1,<0.9.0)"
+]
+
+[tool.poetry]
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+

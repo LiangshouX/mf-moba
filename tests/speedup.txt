@@ -1,0 +1,260 @@
+tests/test_moba_speedup.py
++-----------------+----------+
+| Metric          | Value    |
++-----------------+----------+
+| Device          | 0        |
+| Batch           | 1        |
+| Head            | 8        |
+| Seq Len         | 32768    |
+| Chunk Size      | 512      |
+| Top K           | 3        |
+| Flash Time(ms)  | 645.91   |
+| Flash GPU Util: | 97.3%    |
+| MoBA Time(ms)   | 209.13   |
+| MoBA GPU Util:  | 99.9%    |
+| Speedup         | 3.09x    |
+| Flash MFU       | 464.82%  |
+| MoBA MFU        | 1435.61% |
++-----------------+----------+
+.
++-----------------+----------+
+| Metric          | Value    |
++-----------------+----------+
+| Device          | 0        |
+| Batch           | 1        |
+| Head            | 14       |
+| Seq Len         | 32768    |
+| Chunk Size      | 512      |
+| Top K           | 3        |
+| Flash Time(ms)  | 1151.58  |
+| Flash GPU Util: | 99.9%    |
+| MoBA Time(ms)   | 367.04   |
+| MoBA GPU Util:  | 99.9%    |
+| Speedup         | 3.14x    |
+| Flash MFU       | 456.24%  |
+| MoBA MFU        | 1431.46% |
++-----------------+----------+
+.
++-----------------+----------+
+| Metric          | Value    |
++-----------------+----------+
+| Device          | 0        |
+| Batch           | 1        |
+| Head            | 8        |
+| Seq Len         | 32768    |
+| Chunk Size      | 1024     |
+| Top K           | 3        |
+| Flash Time(ms)  | 649.66   |
+| Flash GPU Util: | 99.3%    |
+| MoBA Time(ms)   | 252.45   |
+| MoBA GPU Util:  | 100.0%   |
+| Speedup         | 2.57x    |
+| Flash MFU       | 462.13%  |
+| MoBA MFU        | 1189.26% |
++-----------------+----------+
+.
++-----------------+----------+
+| Metric          | Value    |
++-----------------+----------+
+| Device          | 0        |
+| Batch           | 1        |
+| Head            | 14       |
+| Seq Len         | 32768    |
+| Chunk Size      | 1024     |
+| Top K           | 3        |
+| Flash Time(ms)  | 1156.19  |
+| Flash GPU Util: | 99.8%    |
+| MoBA Time(ms)   | 439.08   |
+| MoBA GPU Util:  | 100.0%   |
+| Speedup         | 2.63x    |
+| Flash MFU       | 454.43%  |
+| MoBA MFU        | 1196.60% |
++-----------------+----------+
+.
++-----------------+----------+
+| Metric          | Value    |
++-----------------+----------+
+| Device          | 0        |
+| Batch           | 4        |
+| Head            | 8        |
+| Seq Len         | 32768    |
+| Chunk Size      | 512      |
+| Top K           | 3        |
+| Flash Time(ms)  | 211.93   |
+| Flash GPU Util: | 99.2%    |
+| MoBA Time(ms)   | 195.06   |
+| MoBA GPU Util:  | 99.8%    |
+| Speedup         | 1.09x    |
+| Flash MFU       | 5666.51% |
+| MoBA MFU        | 6156.76% |
++-----------------+----------+
+.
++-----------------+----------+
+| Metric          | Value    |
++-----------------+----------+
+| Device          | 0        |
+| Batch           | 4        |
+| Head            | 14       |
+| Seq Len         | 32768    |
+| Chunk Size      | 512      |
+| Top K           | 3        |
+| Flash Time(ms)  | 373.85   |
+| Flash GPU Util: | 99.0%    |
+| MoBA Time(ms)   | 340.40   |
+| MoBA GPU Util:  | 100.0%   |
+| Speedup         | 1.10x    |
+| Flash MFU       | 5621.56% |
+| MoBA MFU        | 6173.91% |
++-----------------+----------+
+.
++-----------------+----------+
+| Metric          | Value    |
++-----------------+----------+
+| Device          | 0        |
+| Batch           | 4        |
+| Head            | 8        |
+| Seq Len         | 32768    |
+| Chunk Size      | 1024     |
+| Top K           | 3        |
+| Flash Time(ms)  | 212.02   |
+| Flash GPU Util: | 96.2%    |
+| MoBA Time(ms)   | 227.31   |
+| MoBA GPU Util:  | 99.9%    |
+| Speedup         | 0.93x    |
+| Flash MFU       | 5664.14% |
+| MoBA MFU        | 5283.20% |
++-----------------+----------+
+.NVML Error: Uninitialized
+
++-----------------+----------+
+| Metric          | Value    |
++-----------------+----------+
+| Device          | 0        |
+| Batch           | 4        |
+| Head            | 14       |
+| Seq Len         | 32768    |
+| Chunk Size      | 1024     |
+| Top K           | 3        |
+| Flash Time(ms)  | 373.95   |
+| Flash GPU Util: | 97.6%    |
+| MoBA Time(ms)   | 395.79   |
+| MoBA GPU Util:  | 0.0%     |
+| Speedup         | 0.94x    |
+| Flash MFU       | 5620.11% |
+| MoBA MFU        | 5309.94% |
++-----------------+----------+
+.NVML Error: Uninitialized
+
++-----------------+----------+
+| Metric          | Value    |
++-----------------+----------+
+| Device          | 0        |
+| Batch           | 4        |
+| Head            | 8        |
+| Seq Len         | 32768    |
+| Chunk Size      | 2048     |
+| Top K           | 3        |
+| Flash Time(ms)  | 212.09   |
+| Flash GPU Util: | 98.7%    |
+| MoBA Time(ms)   | 286.98   |
+| MoBA GPU Util:  | 0.0%     |
+| Speedup         | 0.74x    |
+| Flash MFU       | 5662.31% |
+| MoBA MFU        | 4184.71% |
++-----------------+----------+
+.NVML Error: Uninitialized
+
++-----------------+----------+
+| Metric          | Value    |
++-----------------+----------+
+| Device          | 0        |
+| Batch           | 4        |
+| Head            | 14       |
+| Seq Len         | 32768    |
+| Chunk Size      | 2048     |
+| Top K           | 3        |
+| Flash Time(ms)  | 374.49   |
+| Flash GPU Util: | 99.5%    |
+| MoBA Time(ms)   | 501.26   |
+| MoBA GPU Util:  | 0.0%     |
+| Speedup         | 0.75x    |
+| Flash MFU       | 5611.89% |
+| MoBA MFU        | 4192.68% |
++-----------------+----------+
+.NVML Error: Uninitialized
+
++-----------------+-----------+
+| Metric          | Value     |
++-----------------+-----------+
+| Device          | 0         |
+| Batch           | 8         |
+| Head            | 8         |
+| Seq Len         | 32768     |
+| Chunk Size      | 2048      |
+| Top K           | 3         |
+| Flash Time(ms)  | 137.37    |
+| Flash GPU Util: | 98.7%     |
+| MoBA Time(ms)   | 231.07    |
+| MoBA GPU Util:  | 0.0%      |
+| Speedup         | 0.59x     |
+| Flash MFU       | 17484.52% |
+| MoBA MFU        | 10394.30% |
++-----------------+-----------+
+.NVML Error: Uninitialized
+
++-----------------+-----------+
+| Metric          | Value     |
++-----------------+-----------+
+| Device          | 0         |
+| Batch           | 8         |
+| Head            | 14        |
+| Seq Len         | 32768     |
+| Chunk Size      | 2048      |
+| Top K           | 3         |
+| Flash Time(ms)  | 242.14    |
+| Flash GPU Util: | 99.2%     |
+| MoBA Time(ms)   | 402.84    |
+| MoBA GPU Util:  | 0.0%      |
+| Speedup         | 0.60x     |
+| Flash MFU       | 17358.58% |
+| MoBA MFU        | 10434.00% |
++-----------------+-----------+
+.NVML Error: Uninitialized
+
++-----------------+-----------+
+| Metric          | Value     |
++-----------------+-----------+
+| Device          | 0         |
+| Batch           | 8         |
+| Head            | 8         |
+| Seq Len         | 32768     |
+| Chunk Size      | 4096      |
+| Top K           | 3         |
+| Flash Time(ms)  | 137.54    |
+| Flash GPU Util: | 98.7%     |
+| MoBA Time(ms)   | 245.56    |
+| MoBA GPU Util:  | 0.0%      |
+| Speedup         | 0.56x     |
+| Flash MFU       | 17462.62% |
+| MoBA MFU        | 9781.29%  |
++-----------------+-----------+
+.NVML Error: Uninitialized
+
++-----------------+-----------+
+| Metric          | Value     |
++-----------------+-----------+
+| Device          | 0         |
+| Batch           | 8         |
+| Head            | 14        |
+| Seq Len         | 32768     |
+| Chunk Size      | 4096      |
+| Top K           | 3         |
+| Flash Time(ms)  | 242.29    |
+| Flash GPU Util: | 99.3%     |
+| MoBA Time(ms)   | 419.99    |
+| MoBA GPU Util:  | 0.0%      |
+| Speedup         | 0.58x     |
+| Flash MFU       | 17347.68% |
+| MoBA MFU        | 10007.89% |
++-----------------+-----------+
+.
